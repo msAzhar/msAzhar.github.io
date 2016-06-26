@@ -1,0 +1,29 @@
+---
+layout: post
+title: Dragonfire 
+date: 2016-06-25 07:59:00
+---
+
+<blockquote>
+Dragonfire projesi incelenmesi
+</blockquote>
+
+2015-2016 eğitim-öğretim yılında Ondokuz Mayıs Üniversitesi son sınıf öğrencileri(Mehmet Mert YILDIRAN ve İsmail KORKMAZ) tarafından geliştirilen bir uygulamadır. 
+
+Dragonfire Virtual Assistant, belirli Linux dağıtımları için geliştirilmiş açık kaynak kodlu, kullanıcıdan konuşma girdileri alarak insan-bilgisayar görevi gören bir soru-cevap servisi ile cevaplayabilen bir sanal yardımcı projesidir.
+Dragonfire aşağıdaki görevleri yerine getirmektedir:
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=krHUzY2DylI" target="blank">Built-in komutları yerine getirmektedir</a></li>
+  <li><a href ="https://www.youtube.com/watch?v=ujmRtqf2nxQ" target="blank">Teachable API ile öğretilebilmektedir</a></li>
+  <li><a href ="https://www.youtube.com/watch?v=FafUcxC0puM" target="blank">YodaQA ile sorulara cevaplayabilmektedir</a></li>
+</ul>
+NOT: Yukarıdakilere tıklayarak, videolu *demo*'larına göz atabilirsiniz.
+
+
+Birincisinde, istenilen görev mevcut olan komutlar arasında aranarak, gerçekleştirilmektedir. 
+
+İkincisinin gerçekleştirilebilmesi ise JSON API vasıtasıyla yapılmıştır. JSON API ile geliştirilmiş olan <b><b>Program O</b> *chatbot*'unu <a href="http://teach.dragon.computer/gui/jquery/index.php" target="blank">buradan</a> deneyebilirsiniz.
+
+YodaQA ise açılımı "Yet anOther Deep Answering Pipeline" olan açık kaynak kodlu sor cevap sistemidir. YodaQA sistemini de <a href="http://live.ailao.eu/" target="blank">buradan</a> deneyebilirsiniz.
+
