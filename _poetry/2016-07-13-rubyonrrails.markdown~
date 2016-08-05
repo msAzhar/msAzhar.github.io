@@ -1,0 +1,52 @@
+---
+layout: post
+title: Ruby on Rails 
+date: 2016-07-13 21:33:00
+---
+
+<blockquote>
+Ruby on Rails'e Giriş...
+</blockquote>
+
+
+Lisans eğitimimin ikinci senesi de bitti. Artık mesleğimle ilgili bir şeyler yapabiliyor olmalıyım diye düşünüyorum ve kendimi biraz geliştirmek için de sene başından beri Uzem Akademi Yaz Kampına katılmayı düşünüyordum. Bu sene bu kamp'a sınavla değil de bir proje fikriyle kabul ediyorlardı. Böylece, ekip arkadaşlarımla birlikte "Seslik" isimli projemiz üzerinde çalışmaktayız. İlk adımımız kendimizi belirli konularda geliştirmektir. İlk konumuz da AngularJS'tir...
+
+AngularJS istemci taraflı JavaScript ve MV*(Model View Whatever) mimari design pattern'i kullanarak geliştirilmiş bir framework'üdür. AngularJS, tasarımda kullanılan gelişmiş mühendislik sayesinde, kompleks uygulamaları çok az kod satırıyla geliştirmeyi sağlar. 
+
+AngularJS'ın çalışması için oluşturduğumuz bilmemne.html sayfamıza AngularJS kütüphanesi eklenir. Bir AngularJS uygulaması olabilmesi için ise en az bşr tane `ng-app` *attribute*'una gerek var: 
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html ng-app> <!-- tüm sayfanın AngularJS uygulaması olduğunu belirtmektedir -->
+  <head>
+    <title>Başlık</title>
+  </head>
+  <body>
+    <p>Bu bir AngularJS uygulamasıdır..!</p>
+  </body>
+</html>
+
+{% endhighlight %}
+
+AngularJS'in kütüphanesiyle berbarer gelen *directive*'ler mevcuttur. Onlar `ng-prefix` *(ön eki)* kullanır. Örneğin, ng-model, ng-app vs.
+*Directive*'leri bulduktan sonra onları yugulamamıza *bind* etmemiz gerekmektedir. Uygulama *boot* ediliyor ve gösteriliyor. Ve **Digest cycle** kullanıcı etkileşimi dinlemeye başlıyor.
+
+Digest Cycle uygulamamızın *view* katmanını yani kullanıcının gördüğü ekrandaki verileri güncel tutmakla görevli yapıdır. *View*'nun otomatik güncellenmesini herhangi bir ekstra listener eklemeden sağlamaktadır.
+AngularJS, *template* olarak *HTML* kullanır, kendi dili ile ekstra etiketler ekleyerek *HTML* olarak *extend* eder.
+
+AngularJS'in bir diğer dikkat çeken özelliklerinden biri <b><b>Two way binding</b>'dir. Kısaca, *model* kısmındaki *data*'nın değişmesinin *view* kısmında, *view* kısmındaki *data* değişiminin *model* kısmında senkron bir şekilde değişimini sağlamaktadır. Böylece, hem *view* hem *model* iki taraflı olarak birbiri ile senkron olarak güncel kalıyor.
+
+AngularJS'in basit *HTML* etiketleri kullanmasının avantajı HTML kodlayanın, AngularJS tarafı ile ilgilenmeden gelen *data*'ları kolayca bağlayabiliyor olmasıdır. Böyle bir yapıya ulaşmasını sağlayan parçalara göz atalım.
+ <ul>
+   <li> <b><b>Model:</b> Kullanıcıya gösterilecek *data*'yı gösteren kısımdır.</li>
+   <li> <b>View:</b> Kullanıcının gördüğü kısımdır. Temel *HTML* etiketleri ile birlikte AngularJS *directive*'lerinin model katmanı ile bağlanması ile oluşan yapıdır. AngularJS'in *template* yapısını bu katmana katıyoruz.</li>
+   <li> <b>Controller:</b> Bu katman, modelden aldığı *data*'lar ile birlikte uygulamayı kontrol eden bir logic oluşturur. Modelden alınan *data*'ların *view*'e bağlanmasını yönetir.</li>
+   <li> <b>Scope:</b> *Data* modellerini ve fonksiyonlarını içeren kısımdır. Genel olarak *controller* kısmında scope nesneleri ve fonksiyonlerı set edilir.</li>
+   <li> <b>Directives:</b> *HTML*'e yeni özellikler kazandırma görevini halleden kısımdır.</li>
+   <li> <b>Expressins:</b> {{ }} ile ifade edilirler. *Scope*'tan gelen *data* ve fonksiyonların bağlanması ile oluşturulur.</li>
+   <li> <b>Template</b> Temel *HTML* etiketleri, *directive*'leri ve *expressin*'ları içeren kısımdır.</li><br>
+
+
+Kaynak: "AngularJS ile web ve mobil uygulama geliştirme" kitabı.
+
