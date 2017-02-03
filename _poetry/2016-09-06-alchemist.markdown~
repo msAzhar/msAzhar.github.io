@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Ruby on Rails 
-date: 2016-07-13 21:33:00
+title: Алхимик(Simyager) 
+date: 2016-07-13 22:26:50
 ---
 
 <blockquote>
-Ruby on Rails'e Giriş...<br>
-<a href="http://msazhar.github.io/folios/rails_installation/index.html#slide1" target="blank">#Rails Kurulumu</a>
+Пауло Коэльо *Алхимик*...<br>
 </blockquote>
 
 
-Uzem Akademi Yaz Kampı'nın eğitimleri başladı sonunda:) Bugün üçüncü günümüzdü. Ve Bu ilk üç günümüzün konusu Ruby on Rails idi...
+Добиться воплощений своей судьбы - это единственная подлинная обязянность человека...
 
-Ruby on Rails, Ruby dilini temel alan bir web geliştirme framework'üdür. Ruby on Rails, kısaca Rails, iki temel yazılım geliştirme felsefesi üzerine kuruludur:
-
+Все люди, пока они еще молоды, знают свою судьбу... Но с течением времени таинственная сила принимается убеждать их в том, что добиться воплощения их судьбы невозможно.
 
    <li> <b><b>Konfigurasyon Üzerine Kabuller (CoC: Convention over Configuration):</b><br> 
 Bu kabuller sayesinde uygulamamızı geliştirmeye 1:0 önde başlamış oluruz, yani biz doğrudan işe başlayabiliriz. Bu felsefe sayesinde, Rails ile uygulama geliştirmek diğer hiç bir alternatifinin ulaşamadığı kadar hızlı ve eğlencelidir.
@@ -31,6 +29,5 @@ MVC (Model View Controller), çevik (agile) yazılım geliştirme süreçlerine 
 
 <p>
 <center>
-Kaynak: "Ruby on Rails" kitabı. (Sıtkı Bağdat)
-
+Kaynak: "Ruby on Rails" kitabı.
 

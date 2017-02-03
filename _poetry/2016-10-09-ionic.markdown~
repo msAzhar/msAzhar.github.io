@@ -1,0 +1,55 @@
+---
+layout: post
+title: Ionic Framework
+date: 2016-10-09 01:24:40
+---
+
+<blockquote>
+Mobil uygulama için framework<br>
+<a href="https://en.wikipedia.org/wiki/Ionic_%28mobile_app_framework%29" target="blank">#Ionic Framework</a>
+<a href="http://ionicframework.com/getting-started/" target="blank">#Ionic kurulumu</a>
+
+</blockquote>
+
+
+Uzem Akademi Yaz Kampı'nın eğitimlerinin sonraki günlerinde AngularJS anlatıldı ve son gnülerinde de ionic framework'ü anlatıldı. Aslında ionic framework'ünü daha önce kullanmıştım, ama tekrarlamaktan hiç bir zaman zarar olmaz...
+
+
+   <li> <b><b>Kurulum:</b><br> 
+Ionic Framework'ünü kurabilmek için, öncellikle <a href="https://nodejs.org" target="blank">https://nodejs.org/</a> tan Node paketini indirmeliyiz. Node.js modüllerini kurduktan sonra:<br>
+<br>
+<blockquote>
+$ npm install -g cordova ionic
+</blockquote>
+Komutu ile Cordova ve Ionic kurulumlarını yapıyoruz.
+<br>
+<br>
+   <li> <b><b>Ionic ile proje oluşturma:</b></b><br>  
+Ionic ile proje oluşturulurken, bize üç tane template seçeneği sunulmaktadır(blank:boş, sidemenu:menü içeriyor, tabs:sayfalar içeriyor). Bunlardan birini seçerek Ionic uygukamamızı aşağıdaki kodu yazarak oluştuabiliriz:
+<blockquote>
+<br>
+$ ionic start <uygulamadi> sidemenu
+</blockquote>
+Daha sonra, olşturulan dizinin içine girerek ios ya da android platformların birini eklememiz gerekiyor:
+<br>
+<blockquote>
+$ ionic add platform android
+</blockquote>
+Uygulamamızı tarayıcımızda test etmek için:
+<br>
+<blockquote>
+$ ionic serve
+</blockquote>
+cep telefonumuzda test etmek için de:
+<br>
+<blockquote>
+$ ionic run
+</blockquote>
+komutlarını çalıştırmamız gerekiyor.
+<br>
+<h4>Plugin'ler</h4>
+<br>
+ngCordova ile gereken plugin'leri uygulamamıza dahil ederek kamera, gps gibi özellikleri kullanabiliriz.
+
+
+

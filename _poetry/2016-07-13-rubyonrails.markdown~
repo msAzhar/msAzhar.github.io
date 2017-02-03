@@ -6,7 +6,7 @@ date: 2016-07-13 21:33:00
 
 <blockquote>
 Ruby on Rails'e Giriş...<br>
-<a href="http://msazhar.github.io/folios/rails_installation/index.html#slide1">#Rails Kurulumu</a>
+<a href="http://msazhar.github.io/folios/rails_installation/index.html#slide1" target="blank">#Rails Kurulumu</a>
 </blockquote>
 
 
@@ -31,5 +31,6 @@ MVC (Model View Controller), çevik (agile) yazılım geliştirme süreçlerine 
 
 <p>
 <center>
-Kaynak: "Ruby on Rails" kitabı.
+Kaynak: "Ruby on Rails" kitabı.(Sıtkı Bağdat)<br>
+
 

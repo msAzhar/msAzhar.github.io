@@ -1,0 +1,77 @@
+---
+layout: post
+title: Ionic Framework
+date: 2016-09-10 01:24:40
+---
+
+<blockquote>
+Mobil uygulama için framework<br>
+<a href="https://en.wikipedia.org/wiki/Ionic_%28mobile_app_framework%29" target="blank">#Ionic Framework</a>
+<a href="http://ionicframework.com/getting-started/" target="blank">#Ionic kurulumu</a>
+
+</blockquote>
+
+
+Uzem Akademi Yaz Kampı'nın eğitimlerinin sonraki günlerinde AngularJS anlatıldı ve son gnülerinde de ionic framework'ü anlatıldı. Aslında ionic framework'ünü daha önce kullanmıştım, ama tekrarlamakta her zaman fayda vardır...
+
+
+   <li> <b><b>Kurulum:</b><br> 
+Ionic Framework'ünü kurabilmek için, öncellikle <a href="https://nodejs.org" target="blank">https://nodejs.org/</a> tan Node paketini indirmeliyiz. Node.js modüllerini kurduktan sonra:<br>
+<br>
+<blockquote>
+$ npm install -g cordova ionic
+</blockquote>
+Komutu ile Cordova ve Ionic kurulumlarını yapıyoruz.
+<br>
+<br>
+   <li> <b><b>Ionic ile proje oluşturma:</b></b><br>  
+Ionic ile proje oluşturulurken, bize üç tane template seçeneği sunulmaktadır(blank:boş, sidemenu:menü içeriyor, tabs:sayfalar içeriyor). Bunlardan birini seçerek Ionic uygulamamızı aşağıdaki kodu yazarak oluştuabiliriz:
+<blockquote>
+<br>
+$ ionic start <-uygulamadi-> sidemenu
+</blockquote>
+Daha sonra, olşturulan dizinin içine girerek ios ya da android platformların birini eklememiz gerekiyor:
+<br>
+<br>
+<blockquote>
+$ ionic add platform android
+</blockquote>
+Uygulamamızı tarayıcımızda test etmek için:
+<br>
+<blockquote>
+$ ionic serve
+</blockquote>
+cep telefonumuzda test etmek için de:
+<br>
+<blockquote>
+$ ionic run
+</blockquote>
+komutlarını çalıştırmamız gerekiyor.
+<br>
+<br>
+<h4><b><b>Plugin'ler</b></b></h4>
+<br>
+ngCordova ile gereken plugin'leri uygulamamıza dahil ederek kamera, gps gibi özellikleri kullanabiliriz. Bunun için aşağıdaki adımları yapmamız gerekmektedir.<br>
+<br>
+Öncellikle <a href="https://github.com/driftyco/ng-cordova/archive/master.zip">bu adresteki</a> zip dosyayı indirmek gerekmektedir. Onun içerisinde <b><b>dist</b></b> dizin altında bulunan <b><b>ng-cordova.min.js</b></b> dosyasını oluşturduğumuz uygulamadaki <b><b>www/js</b></b> dizini altına kopyalamak gerekiyor.
+<br>
+Daha sonra, <b><b>index.html</b></b> sayfamıza, eklediğimiz dosyayı aşağıdaki kod satırı ile dahil ediyoruz:
+{% highlight html %}
+<script src="js/ng-cordova.min.js"></script>
+{% endhighlight %}
+
+Aynı şekilde, ngCordova modülünü, <b><b>www/js/app.js</b></b> dosyasına aşağıdaki şekildeki gibi eklemeliyiz:
+{% highlight html %}
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordva'])
+{% endhighlight %}
+
+Bu adımları gerçekledikten sonra istediğimiz plugin'i uygulamamıza ekleyebiliriz. 
+Pluginleri <a href="http://ngcordova.com/docs/plugins/">buradan</a> seçebilir ve kullanabiliriz.
+<br><br>
+Seçtiğimiz plugini uygulamamıza şu şekilde eklemeliyiz:
+<blockquote>
+$ cordova plugin add secilen-cordova-plugin-adı
+</blockquote>
+
+Pluginimizi de ekledikten sonra, o plugin'i bulduğumuz sayfadaki kod satırlarını uygulamamızın <b><b>controller.js</b></b> sayfasına kendimize göre düzenleyerek ekliyoruz. <b><b>app.js</b></b> sayfasında da bu <b><b>pluginController</b></b> için gidilecek url adresini belirterek location'ını(örn., /bilmemneplugin.html) belirtiyoruz. Ve bu <b><b>bilmemneplugin.html</b></b> sayfasında da plugin'i(n girdi/çıktılarını) kullanıyoruz. (Son kısım bir örnekle daha iyi anlaşılacaktır..)
+

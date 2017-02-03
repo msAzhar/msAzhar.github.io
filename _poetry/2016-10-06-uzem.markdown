@@ -1,0 +1,46 @@
+---
+layout: post
+title: UZEM Akademi Yazılım kampı
+date: 2016-10-06 20:04:24
+---
+
+<blockquote>
+<a href="http://uzem.omu.edu.tr/3-su-duzenlenen-uzem-akademi-yazilim-kampi-sona-erdi/" target="blank">3.’sü Düzenlenen UZEM Akademi Yazılım Kampı Sona Erdi</a>
+</blockquote>
+
+
+Uzem Akademi Yaz Kampı'nın amacı, kampta öğretilen araçları kullanarak kendi projelerimizi hayata geçirmek idi. 
+Bu amacı yerine getirmek için, kampa katılan herkes kendi projesi üzerinde çabaladı.<br>
+Bizim grubumuzun yaptığı proje "Seslik" isimli işaret dili çeviri sistemidir. Bu uygulama ile insanların duyma/konuşma engelli insanlarla daha kolay iletişim kurulabilmektedir. Kısa özeti şu şekildedir:<br>
+<blockquote>
+Sosyal hayatımız için iletişim büyük bir önem taşımaktadır. Duymakta zorluk çeken
+
+insanlar için ise iletişim işaret dili vasıtasıyla gerçekleştirilmektedir. Böyle insanlarla da
+
+iletişim kurabilmemiz için, özellikle doktor muayene ya da iş görüşme gibi zor ve önemli
+
+konular üzerinde anlaşabilmemiz için işaret dili tercümanlarına ihtiyaç duymaktayız. Bu
+
+tercümanlık işini hem basitleştirmek için hem de bundan hız ve zaman kazanmak için birçok
+
+çeviri uygulamaları geliştirilmiştir. Alternatif çözüm olarak bu uygulamalara ek olarak
+
+“Seslik” projesi geliştirilmiştir. Bu proje görme ve duyu engelli bireyler ile diğer bireylerin
+
+birbirleriyle daha kolay iletişim kurabilmesini hedeflemektedir. İletişim yöntemi olarak sesten
+
+veya yazıdan işaret görsellerine çeviri yapılarak iletişim sağlanmıştır.
+</blockquote>
+
+
+Temelinde mobil uygulama geliştirme frameworkü olan ionic kullanıldı. Resimlerle ilgili işlemleri yapabilmek için de Cloudinary platformu kullanıldı. Veritabanından resimleri çekebilmek için gerçek zaman veritabanı hizmetlerini sunan Firebase kullanıldı. Yazının sesli okunması ise Google Çeviri nin metin okuma vasıtasıyla gerçekleştirildi.
+
+Projeye [bu adresten](https://github.com/akademiuzem/seslik) ulaşabilirsiniz.
+
+
+
+
+
+
+
+
