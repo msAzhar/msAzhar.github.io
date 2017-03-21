@@ -1,0 +1,34 @@
+---
+layout: post
+title: Akademin Bilişim 2017..
+date: 2017-02-22 10:28:00
+---
+
+<blockquote>
+Akademik Bilişim 2017, Aksaray Üniversitesi..<br>
+</blockquote>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp; Geleneksel olarak her sene farklı üniversitelerde düzenlenmekte olan Akademik Bilişim Konferansına ikinci kez katıldım. İlk katıldığım sene Eskişehirdeki Anadolu Üniversitesinde sadece kursiyer olarak katılmıştım. Bu sene ise daha önceki postlarda bahsettiğim Seslik projemizi de bildiri şeklinde sundum. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; Bu seneki kurslardan "Yazılım Hayat Döngüsü ve Özgür Araçlar" eğitimine katıldım. Bu eğitim sayesinde gerçek hayattaki projelerin geliştirilme aşamaları ve yazılımda kullanılan araçlar ile özgür yazılım ve açık kaynak kod hakkında konuşuldu. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; Kabaca anlatırsam, bir proje geliştirilirken öncelikle bunu kabul etmemiz lazım: yazılımı tek başına yazmak artık mümkün değil, bu yüzden ortak çalışmalıyız. Bunun için ise ekip içerisinde proje geliştirme aşamasındaki uyulması gereken kuralların belirlenmesi lazım.<br>Toplantılar nasıl gerçekleşecek: sabah mı? akşam mı? bazıları ayakta yapıyor çünkü insanlar otururken konuşmaya meyillidir.. Codeview toplantıları yapılacak mı?-> yazılan kodlar okuyor. Güzel ama maaliyetlidir.. Belgeleme yapılmalıdır: yazılımda kod yazım kurallarının belirlenmesi,örn. Camelcase mi olacak? girinti olrak tab mı yoksa boşluk mu kullanılacak? gibi standartlar belirlenmelidir. Kullanıcı kılavuzları yazılmalıdır: pdf mi html mi olacak?<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Bir de kimin neyi ne zaman ve nasıl yaptığını görmek için iş takip sistemlerinin kullanılması gerekmektedir.Yazılan kodun tarihçesini tutmak için de sürüm takip sistemleri kullanılmalı.<br><br>
+Ayrıca testlerin arasındaki farkı öğrendim:<br>
+- <b><b>Birim Testler(Unit Tests):</b></b> algoritması doğru olması gerken yerlerde, hesaplanması gereken yerlerde yazılır. Hata bildiriminde yazılır.<br>
+- <b><b>Entegrasyon Testler:</b></b> sunucuya veri gönderip sorgu yapıp geri çıktı alma gibi durumlarda kullanılır.<br>
+- <b><b>UAT - User Accept Test:</b></b> kod kalite ölçümü yapılır. Buradaki "kalite" - sürdürülebilir olması demektir.<br>
+<br>
+Sürüm numaralandırma sistemi de olması gerekmektedir. Örn. Semantic Versioning:<br>
+<blockquote>
+1.2.3
+</blockquote>
+1 -> major: geriye doğru uyumsuz. Gerekli kurulumlar yapılmalı.<br>
+2 -> minor: yeni özellikler var demek ve kullanım kılavuzu var.<br>
+3 -> bugfix: sadece ve sadece hata düzeltimi. <br>
+Ayrıca Alpha ve Beta sürümleri var. Alpha - çalışmaz ama fikir soruyor; Beta - public'e açıktır, ama production'a değil.<br>
+Kısacası bu kadar. Eğitimleri için Hakang Uygun eğitmenizmize ve onunla birlikte gelen asistan hocalarımıza teşekkürlerimi iletiyorum.<br>
+Ayrıca bu konferansı düzenleyen ve bu organizasyonda emeği geçen herkesin ellerine ve emeğine sağlık:) Teşekkürler:)
+
+
+
+
