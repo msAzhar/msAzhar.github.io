@@ -1,0 +1,73 @@
+---
+layout: post
+title: Ruby ile GUI
+date: 2017-10-18 08:44:00
+---
+
+<blockquote>
+Shoes..<br>
+</blockquote>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp; Ruby ile GUI yapabilir miyim? Nasıl yapabilirim? diye sormuşuzdur kendimize..<br>
+Evet, Ruby ile GUI yapabilmek için birçok araç mevcuttur. Onlardan biri de Shoes'dur.<br>
+Windows kurulumu "next next"'tir. Linux'ta ise <a href="http://shoesrb.com/downloads/" target="_blank">bu adresten</a> `.install` uzantılı Shoes versionlardan size uygun olanı indirmelisiniz. Örn. ``shoes-3.3.3-gtk3-x86_64.install``'u indirdikten sonra, onu çalıştırılabilir hale getiriyoruz ve çalıştırıyoruz
+(_`chmod +x shoes-3.3.3-gtk3-x86_64.install`_); kurulum gerçekleşmiş oluyor ve artık shoes'u çift tıklayarak ya da terminalden çalıştırabiliriz.
+Shoes kullanımına göz atalım.
+
+```ruby
+Shoes.app do{ 
+//her şeyi bu iki satır kod arasında yazmalıyız.
+ }
+```
+<br>
+Örneğin, bir buton ekleyelim: `Shoes.app { button "Tikla" }` çıktısı:<br>
+<img src="/img/1.png" style="border: 1px solid black"/> <br><br>
+Türkçe karakter sorununu çözelim ve başlığımızı düzenleyelim:<br>
+
+```ruby
+# encoding: utf-8
+Shoes.app(title: "Ruby GUI Örnekleri") do  
+ button "Tıkla!"
+end
+```
+
+<br>
+çıktımız:<br>
+<img src="/img/2.png" style="border: 1px solid black"/><br>
+
+Butona tıklayınca selam vermesini isteyelim:
+
+```ruby
+# encoding: utf-8
+Shoes.app(title: "Ruby GUI Örnekleri") do  
+ @tikla = button "Tıkla!"
+ @tikla.click { para "Selam!!" } 
+end 
+```
+
+<br>Aşağıdaki kod ile çıktısını inceleyerek neyin ne olduğunu anlayabilriz.<br>
+<b><b>NOT:</b></b> Shoes'da `stack ` verileri dikey olarak, `flow` ise yatay olarak yan yana yazdırmamızı sağlamaktadır. <br>
+
+```ruby
+# encoding: utf-8
+Shoes.app(title: "Ruby GUI Örnekleri") do  
+ background "#F3F".."#F90"
+ stack(margin: 5, top: 40) do
+  flow do 
+   para "İsmini gir: "
+   @isim = edit_line
+   @tikla = button "Selamla!"
+   @tikla.click { para "Selam,", @isim.text, "!" , stroke: white } 
+  end
+ end
+end
+```
+
+<br>
+<img src="/img/3.png" style="border: 1px solid black"/><br>
+
+Daha fazla bilgi için bakınız: <a href="http://shoesrb.com/" target="_blank">http://shoesrb.com/</a>
+
+
+
