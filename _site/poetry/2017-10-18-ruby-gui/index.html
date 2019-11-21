@@ -10,7 +10,7 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/poetry/2017-10-18-ruby-gui/">
+    <link rel="canonical" href="http://localhost:4000/poetry/2017-10-18-ruby-gui/">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -70,22 +70,20 @@ Windows kurulumu “next next”‘tir. Linux’ta ise <a href="http://shoesrb.c
 (<em><code class="highlighter-rouge">chmod +x shoes-3.3.3-gtk3-x86_64.install</code></em>); kurulum gerçekleşmiş oluyor ve artık shoes’u çift tıklayarak ya da terminalden çalıştırabiliriz.
 Shoes kullanımına göz atalım.</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="no">Shoes</span><span class="p">.</span><span class="nf">app</span> <span class="k">do</span><span class="p">{</span> 
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Shoes</span><span class="p">.</span><span class="nf">app</span> <span class="k">do</span><span class="p">{</span> 
 <span class="sr">//</span><span class="n">her</span> <span class="err">ş</span><span class="n">eyi</span> <span class="n">bu</span> <span class="n">iki</span> <span class="n">sat</span><span class="err">ı</span><span class="n">r</span> <span class="n">kod</span> <span class="n">aras</span><span class="err">ı</span><span class="n">nda</span> <span class="n">yazmal</span><span class="err">ı</span><span class="n">y</span><span class="err">ı</span><span class="n">z</span><span class="o">.</span>
  <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <p><br />
 Örneğin, bir buton ekleyelim: <code class="highlighter-rouge">Shoes.app { button "Tikla" }</code> çıktısı:<br />
 <img src="/img/1.png" style="border: 1px solid black" /> <br /><br />
 Türkçe karakter sorununu çözelim ve başlığımızı düzenleyelim:<br /></p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="c1"># encoding: utf-8</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># encoding: utf-8</span>
 <span class="no">Shoes</span><span class="p">.</span><span class="nf">app</span><span class="p">(</span><span class="ss">title: </span><span class="s2">"Ruby GUI Örnekleri"</span><span class="p">)</span> <span class="k">do</span>  
  <span class="n">button</span> <span class="s2">"Tıkla!"</span>
 <span class="k">end</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><br />
 çıktımız:<br />
@@ -93,20 +91,19 @@ Türkçe karakter sorununu çözelim ve başlığımızı düzenleyelim:<br /></
 
 <p>Butona tıklayınca selam vermesini isteyelim:</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="c1"># encoding: utf-8</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># encoding: utf-8</span>
 <span class="no">Shoes</span><span class="p">.</span><span class="nf">app</span><span class="p">(</span><span class="ss">title: </span><span class="s2">"Ruby GUI Örnekleri"</span><span class="p">)</span> <span class="k">do</span>  
  <span class="vi">@tikla</span> <span class="o">=</span> <span class="n">button</span> <span class="s2">"Tıkla!"</span>
  <span class="vi">@tikla</span><span class="p">.</span><span class="nf">click</span> <span class="p">{</span> <span class="n">para</span> <span class="s2">"Selam!!"</span> <span class="p">}</span> 
 <span class="k">end</span> 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><br />Aşağıdaki kod ile çıktısını inceleyerek neyin ne olduğunu anlayabilriz.<br />
 <b><b>NOT:</b></b> Shoes’da <code class="highlighter-rouge">stack </code> verileri dikey olarak, <code class="highlighter-rouge">flow</code> ise yatay olarak yan yana yazdırmamızı sağlamaktadır. <br /></p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="c1"># encoding: utf-8</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># encoding: utf-8</span>
 <span class="no">Shoes</span><span class="p">.</span><span class="nf">app</span><span class="p">(</span><span class="ss">title: </span><span class="s2">"Ruby GUI Örnekleri"</span><span class="p">)</span> <span class="k">do</span>  
- <span class="n">background</span> <span class="s2">"#F3F"</span><span class="p">.</span><span class="nf">.</span><span class="s2">"#F90"</span>
+ <span class="n">background</span> <span class="s2">"#F3F"</span><span class="o">..</span><span class="s2">"#F90"</span>
  <span class="n">stack</span><span class="p">(</span><span class="ss">margin: </span><span class="mi">5</span><span class="p">,</span> <span class="ss">top: </span><span class="mi">40</span><span class="p">)</span> <span class="k">do</span>
   <span class="n">flow</span> <span class="k">do</span> 
    <span class="n">para</span> <span class="s2">"İsmini gir: "</span>
@@ -116,8 +113,7 @@ Türkçe karakter sorununu çözelim ve başlığımızı düzenleyelim:<br /></
   <span class="k">end</span>
  <span class="k">end</span>
 <span class="k">end</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><br />
 <img src="/img/3.png" style="border: 1px solid black" /><br /></p>
