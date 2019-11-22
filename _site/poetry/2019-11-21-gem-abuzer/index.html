@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>How to build a gem?</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/poetry/2019-11-21-gem-abuzer/">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!--  instead of blog -->
+        <a class="page-link" href="/">blog</a>
+
+        
+          
+          <a class="page-link" href="/about/">hakkımda</a>
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/poetry/">postlar</a>
+          
+        
+
+	<a href="/folios/index.html" target="blank">Folyolar</a>
+	</div>
+    </nav>
+  </div>
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">How to build a gem?</h1>
+    <p class="post-meta">November 22, 2019 — 02:28</p>
+  </header>
+
+  <article class="post-content">
+    <blockquote>
+Ruby gems are awesome :)<br />
+</blockquote>
+
+<p>Finally, I tried to and built a gem.. Here’s how..<br /> 
+Firstly, install bundler by:</p>
+<blockquote>
+	gem install bundler
+</blockquote>
+<blockquote>
+
+</blockquote>
+
+<p>After its successful installation, generate a new gem, using the following:</p>
+<blockquote>
+	bundle gem gem_name
+</blockquote>
+
+<p>It will create some subdirectories and config files..<br />
+Then, you can add some code in /lib/gem_name.rb file. Later, build it:<br /></p>
+
+<blockquote>
+	gem build gem_name.gemspec
+</blockquote>
+<p>After, you may install your gem in local by running the command below:<br /></p>
+<blockquote>
+	gem install gem_name-0.1.0.gem
+</blockquote>
+<p>Then, check it:<br /></p>
+
+<p><code class="highlighter-rouge">irb(main):001:0&gt; require 'abuzer_gem'</code><br />
+<code class="highlighter-rouge">=&gt; true</code></p>
+
+<p>That’s all for today :)<br /></p>
+
+<p>stay tuned..</p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+  	<p>ms Azhar</p>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
